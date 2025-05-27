@@ -3,18 +3,24 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	row-gap: 24px;
+	row-gap: 23px;
 	max-width: var(--container-width, auto);
 	margin: 0 auto;
-	padding: 72px 0 144px;
+	padding: 90px 0 144px;
 }
 
 .titleDescription {
-	max-width: 550px;
+	max-width: 600px;
 }
 
 .image {
 	width: 100%;
 	height: auto;
+	min-height: 1000px;
 	margin-top: 26px;
+	object-fit: cover;
+}
+
+text {
+	max-width: 1398px;
 }
