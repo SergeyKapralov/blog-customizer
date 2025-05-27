@@ -8,18 +8,21 @@ type ArticleParamsFormProps = {
 	children?: ReactNode;
 	isOpen: boolean;
 	onClick: () => void;
+	sidebar?: React.RefObject<HTMLDivElement>;
 };
 
 export const ArticleParamsForm = ({
 	children,
 	isOpen,
 	onClick,
+	sidebar,
 }: ArticleParamsFormProps) => {
 	console.log({ children });
 	return (
 		<>
 			<ArrowButton isOpen={isOpen} onClick={onClick} />
 			<aside
+				ref={sidebar}
 				className={`${styles.container} ${
 					isOpen ? styles.container_open : ''
 				}`}>
